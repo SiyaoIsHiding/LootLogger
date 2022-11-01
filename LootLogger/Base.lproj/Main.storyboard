@@ -147,11 +147,14 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLg-iP-YvH">
-                                        <rect key="frame" x="0.0" y="126" width="398" height="583"/>
+                                        <rect key="frame" x="0.0" y="126" width="398" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="247" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="iel-hM-E6t">
+                                        <rect key="frame" x="0.0" y="154.5" width="398" height="554.5"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="a8g-k9-ciM" firstAttribute="leading" secondItem="iYH-iD-Lpd" secondAttribute="leading" id="dY8-46-0r5"/>
@@ -188,6 +191,7 @@
                     <navigationItem key="navigationItem" id="t4F-Cq-uvX"/>
                     <connections>
                         <outlet property="dateLabel" destination="NLg-iP-YvH" id="ZjO-5R-rZR"/>
+                        <outlet property="imageView" destination="iel-hM-E6t" id="OPp-rk-f9R"/>
                         <outlet property="nameField" destination="Lfb-sJ-7PJ" id="4Fp-50-osj"/>
                         <outlet property="serialField" destination="a8g-k9-ciM" id="o8u-pC-3M5"/>
                         <outlet property="valueField" destination="iYH-iD-Lpd" id="YUE-Zi-agG"/>

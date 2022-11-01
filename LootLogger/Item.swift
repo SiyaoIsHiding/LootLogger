@@ -11,12 +11,14 @@ class Item: Codable{
     var value: Int
     var serialNumber: String?
     let dateCreated: Date
+    let itemKey: String
     
     init(name: String, value: Int, serialNumber: String?){
         self.name = name
         self.value = value
         self.serialNumber = serialNumber
         self.dateCreated = Date()
+        self.itemKey = UUID().uuidString
     }
     
     convenience init(){

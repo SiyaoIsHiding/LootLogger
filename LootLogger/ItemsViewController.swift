@@ -8,6 +8,7 @@ import UIKit
 
 class ItemsViewController: UITableViewController{
     var itemStore: ItemStore!
+    var imageStore: ImageStore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,7 @@ class ItemsViewController: UITableViewController{
                 let item = itemStore.allItems[row]
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.item = item
+                detailViewController.imageStore = imageStore
             }
         default:
             preconditionFailure("Wrong Segue Identifier: \(segue.identifier!)")

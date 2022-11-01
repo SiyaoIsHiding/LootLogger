@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F046A582908892600DE91ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F046A572908892600DE91ED /* DetailViewController.swift */; };
+		3FAEDC0C290EED9F002BC72F /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAEDC0B290EED9F002BC72F /* ImageStore.swift */; };
 		3FF818B429020D5D00DF215B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF818B329020D5D00DF215B /* AppDelegate.swift */; };
 		3FF818B629020D5D00DF215B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF818B529020D5D00DF215B /* SceneDelegate.swift */; };
 		3FF818BB29020D5D00DF215B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FF818B929020D5D00DF215B /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		3F046A572908892600DE91ED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3FAEDC0B290EED9F002BC72F /* ImageStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		3FF818B029020D5D00DF215B /* LootLogger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LootLogger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF818B329020D5D00DF215B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FF818B529020D5D00DF215B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				3FF818E7290212E600DF215B /* ItemStore.swift */,
 				3FF818E9290353AA00DF215B /* ItemCell.swift */,
 				3F046A572908892600DE91ED /* DetailViewController.swift */,
+				3FAEDC0B290EED9F002BC72F /* ImageStore.swift */,
 			);
 			path = LootLogger;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				3FF818E6290210A900DF215B /* Item.swift in Sources */,
 				3FF818E429020E4100DF215B /* ItemsViewController.swift in Sources */,
 				3FF818EA290353AA00DF215B /* ItemCell.swift in Sources */,
+				3FAEDC0C290EED9F002BC72F /* ImageStore.swift in Sources */,
 				3FF818B429020D5D00DF215B /* AppDelegate.swift in Sources */,
 				3FF818E8290212E600DF215B /* ItemStore.swift in Sources */,
 				3FF818B629020D5D00DF215B /* SceneDelegate.swift in Sources */,
@@ -455,6 +459,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LootLogger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to associate photos with an item.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -482,6 +487,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LootLogger/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to associate photos with an item.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

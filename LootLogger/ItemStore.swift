@@ -9,6 +9,7 @@ import UIKit
 
 class ItemStore{
     var allItems = [Item]()
+    var imageStore: ImageStore!
     let itemArchiveURL: URL = {
         let documentsDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = documentsDirectories.first!
@@ -39,7 +40,9 @@ class ItemStore{
     
     
     func removeItem(_ index: Int){
+        imageStore.removeImage(forKey: allItems[index].itemKey)
         allItems.remove(at: index)
+        
     }
     
     func moveItem(from fromIndex: Int, to toIndex: Int){
